@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Postlist from './PostList';
+import MyLoader from './ContentLoader';
 import './Post.css'
-
 
 function Post() {
 
@@ -9,14 +9,17 @@ function Post() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        setTimeout(()=>{
+        
         fetch ('https://us-central1-figure1-admin-dev.cloudfunctions.net/demoFeed')
-        .then(res=> {
-            return res.json();
-        })
-        .then((data)=> {
-            setPost(data.feedItems)
-            setIsLoading(false)
-        })
+            .then(res=> {
+                return res.json();
+            })
+            .then((data)=> {
+                setPost(data.feedItems)
+                setIsLoading(false)
+            })
+        },2000)
     },[])
 
     //DUMMY DATA 
@@ -40,7 +43,7 @@ function Post() {
         
   return (
     <div>
-        {isLoading && <div> ....Loading.... </div>}
+        {isLoading && <div> <MyLoader /> </div>}
         {posts && <Postlist posts = {posts} /> }
     </div>
   )
