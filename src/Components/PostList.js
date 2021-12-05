@@ -1,12 +1,10 @@
 import './Post.css'
 
 const Postlist = ({posts}) => {
-  // const posts = props.posts
-  // console.log(props,posts)
   return ( 
     <div>
       {posts.map((post) => (         
-        <div className="post">  
+        <div className="post" key={post.imageUrl}> 
             <div className="info">
                 <div className="user">
                     <div className="profile-pic"><img src={ post.profileImageUrl } alt="" /></div>

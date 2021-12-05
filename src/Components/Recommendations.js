@@ -2,67 +2,62 @@ import './Recommendations.css'
 
 function Recommendations() {
 return (
-        <div class="right-col">
-            <div class="profile-card">
-                <div class="profile-pic">
+        <div className="right-col">
+            <div className="profile-card">
+                <div className="profile-pic">
                     <img src="img/cover 9.png" alt=""/>
                 </div>
                 <div>
-                    <p class="username">jesseliketheuncle</p>
-                    <p class="sub-text">Jesse S</p>
+                    <p className="username">jesseliketheuncle</p>
+                    <p className="sub-text">Jesse S</p>
                 </div>
-                <button class="action-btn">switch</button>
+                <button className="action-btn">switch</button>
             </div>
-            <p class="suggestion-text">Suggestions for you</p>
-            <div class="profile-card">
-                <div class="profile-pic">
+            <p className="suggestion-text">Suggestions for you</p>
+            <div className="profile-card">
+                <div className="profile-pic">
                     <img src="img/cover 7.png" alt=""/>
                 </div>
                 <div>
-                    <p class="username">frasiercranium</p>
-                    <p class="sub-text">Dr. Frasier Crane</p>
+                    <p className="username">frasiercranium</p>
+                    <p className="sub-text">Dr. Frasier Crane</p>
                 </div>
-                <button class="action-btn">follow</button>
             </div>
-            <div class="profile-card">
-                <div class="profile-pic">
+            <div className="profile-card">
+                <div className="profile-pic">
                     <img src="img/cover 10.png" alt=""/>
                 </div>
                 <div>
-                    <p class="username">hieverybody</p>
-                    <p class="sub-text">Dr. Nick</p>
+                    <p className="username">hieverybody</p>
+                    <p className="sub-text">Dr. Nick</p>
                 </div>
-                <button class="action-btn">follow</button>
             </div>
-            <div class="profile-card">
-                <div class="profile-pic">
+            <div className="profile-card">
+                <div className="profile-pic">
                     <img src="img/cover 11.png" alt=""/>
                 </div>
                 <div>
-                    <p class="username">medicinewoman</p>
-                    <p class="sub-text">Dr. Michaela Quinn</p>
+                    <p className="username">medicinewoman</p>
+                    <p className="sub-text">Dr. Michaela Quinn</p>
                 </div>
-                <button class="action-btn">follow</button>
             </div>
-            <div class="profile-card">
-                <div class="profile-pic">
+            <div className="profile-card">
+                <div className="profile-pic">
                     <img src="img/cover 12.png" alt=""/>
                 </div>
                 <div>
-                    <p class="username">thedoogster1234</p>
-                    <p class="sub-text">Dr. Doogie Howser</p>
+                    <p className="username">thedoogster1234</p>
+                    <p className="sub-text">Dr. Doogie Howser</p>
                 </div>
-                <button class="action-btn">follow</button>
             </div>
-            <div class="profile-card">
-                <div class="profile-pic">
+            <div className="profile-card">
+                <div className="profile-pic">
                     <img src="img/cover 13.png" alt=""/>
                 </div>
                 <div>
-                    <p class="username">theonlyhousedoc</p>
-                    <p class="sub-text">Dr. Gregory House</p>
+                    <p className="username">theonlyhousedoc</p>
+                    <p className="sub-text">Dr. Gregory House</p>
                 </div>
-                <button class="action-btn">follow</button>
             </div>
         </div>
 )}
