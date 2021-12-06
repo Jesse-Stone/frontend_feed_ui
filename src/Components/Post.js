@@ -3,6 +3,7 @@ import Postlist from './PostList';
 import MyLoader from './ContentLoader';
 import './Post.css'
 
+
 function Post() {
 
     const [posts, setPost] = useState(null);
