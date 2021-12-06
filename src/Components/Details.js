@@ -22,7 +22,7 @@ const Details = () => {
                 .catch(error => {
                     console.log(error.message);
                 })
-        },200)
+        },0)
         
     },[])
   
@@ -33,7 +33,10 @@ const Details = () => {
           <div>
             {isLoading && <div> ..loading.. </div>}
             {posts && 
-            <h2>{posts[`${id}`].caption}</h2>}
+            <div>
+              <h1>-- Details --</h1>
+              <h3>{posts[`${id}`].caption}</h3>
+            </div>}
           </div>           
         </div>
       </div>
