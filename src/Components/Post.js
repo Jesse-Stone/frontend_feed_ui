@@ -3,6 +3,8 @@ import Postlist from './PostList';
 import MyLoader from './ContentLoader';
 import './Post.css'
 
+// const _ = require('lodash');
+
 
 function Post() {
 
@@ -20,12 +22,14 @@ function Post() {
                 })
                 .then((data) => {
                     setPost(data.feedItems)
+                   console.log(data.feedItems)
                     setIsLoading(false)
                 })
                 .catch(error => {
                     console.log(error.message);
                 })
         },2000)
+        
     },[])
 
     //DUMMY DATA 

@@ -6,7 +6,7 @@ return (
               <div className="status-wrapper">
                   <div className="status-card">
                       <div className="profile-pic"><img src="img/cover 1.png" alt="" /></div>
-                      <p className="username">jonathan</p>
+                      <p className="username">jesse</p>
                   </div>
                                     <div className="status-card">
                       <div className="profile-pic"><img src="img/cover 2.png" alt="" /></div>

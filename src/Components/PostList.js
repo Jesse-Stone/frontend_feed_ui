@@ -1,9 +1,10 @@
 import './Post.css'
+import { Link } from 'react-router-dom'
 
 const Postlist = ({posts}) => {
   return ( 
     <div>
-      {posts.map((post) => (         
+      {posts.map((post, index) => (         
         <div className="post" key={post.imageUrl}> 
             <div className="info">
                 <div className="user">
@@ -13,7 +14,10 @@ const Postlist = ({posts}) => {
                 </div>
                 <img src="img/option.PNG" className="options" alt="" />
             </div>
-            <img src={ post.imageUrl } className="post-image" alt="" />
+            <Link to={`/details/${index}`}>
+            {/* <Link to={"/details"}> */}
+              <img src={ post.imageUrl } className="post-image" alt="" />
+            </Link>
             <div className="post-content">
                 <div className="reaction-wrapper">
                     <img src="img/like.PNG" className="icon" alt="" />
